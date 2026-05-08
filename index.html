@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .previews-section {
+            padding: 80px 0;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .preview-card {
+            background: rgba(255,255,255,0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        .preview-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+        .preview-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+        .preview-card h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        .preview-card p {
+            color: #666;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        .preview-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            align-self: flex-start;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+        }
+        .preview-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .preview-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Lady Nicole P Cielo</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="real.html">Relationships</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="media.html">Social</a></li>
+                <li><a href="time.html">Timeline</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content container">
+            <h1>Hi,My Name is Nicky</h1>
+            <p>ACT Student | Artist</p>
+        </div>
+    </section>
+
+
+    <section class="previews-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #333; font-size: 3rem; margin-bottom: 1rem;">Explore My World</h2>
+            <p style="text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 3rem;">Discover different aspects of my life and passions</p>
+            
+            <div class="preview-grid">
+                <!-- Gallery Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">🖼️</div>
+                    <h3>Gallery</h3>
+                    <p>Check out my  hobbies, school activities, and  major achievements</p>
+                    <a href="gallery.html" class="preview-btn">View Gallery</a>
+                </div>
+
+                <!-- About Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">👤</div>
+                    <h3>About Me</h3>
+                    <p>Read my biography snout my education journey from elementary to college, and my career aspirations.</p>
+                    <a href="about.html" class="preview-btn">Read More</a>
+                </div>
+
+                <!-- Skills Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">🛠️</div>
+                    <h3>Skills</h3>
+                    <p>Explore my complete list of technical, creative, and soft skills that make me unique.</p>
+                    <a href="skills.html" class="preview-btn">See Skills</a>
+                </div>
+
+                <!-- Relationships Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">❤️</div>
+                    <h3>Relationships</h3>
+                    <p>Meet my  family members, close friends, and  special partners in my life.</p>
+                    <a href="real.html" class="preview-btn">Meet Them</a>
+                </div>
+
+                <!-- Interests Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">🎯</div>
+                    <h3>Interests</h3>
+                    <p>Dive into my interest in  fandoms, shows, games, and  favorite music</p>
+                    <a href="interest.html" class="preview-btn">Discover</a>
+                </div>
+
+                <!-- Art Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">🎨</div>
+                    <h3>Digital Art</h3>
+                    <p>Admire my collection of 7 original digital artworks that i have created over the years.</p>
+                    <a href="art.html" class="preview-btn">View Art</a>
+                </div>
+
+                <!-- Social Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">📱</div>
+                    <h3>Social Media</h3>
+                    <p>Connect with me on Instagram, Facebook, and Discord to stay updated!</p>
+                    <a href="media.html" class="preview-btn">Follow Me</a>
+                </div>
+
+                <!-- Timeline Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">⏳</div>
+                    <h3>Timeline</h3>
+                    <p>Follow my life journey through  childhood,  teenage, and  current milestone events.</p>
+                    <a href="time.html" class="preview-btn">My Story</a>
+                </div>
+
+                <!-- Recommendations Preview -->
+                <div class="preview-card">
+                    <div class="preview-icon">⭐</div>
+                    <h3>Recommendations</h3>
+                    <p>Get my top picks in shows,  books, and  games that you need to experience!</p>
+                    <a href="recommend.html" class="preview-btn">My Recs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cielo, Lady Nicole P. All rights reserved.</p>
+    </footer>
+</body>
+</html>

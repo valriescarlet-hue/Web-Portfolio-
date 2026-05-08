@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .timeline-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 50px;
+            margin: 3rem 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: -3rem;
+            width: 4px;
+            background: linear-gradient(to bottom, #ffd700, #ff6b6b);
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background: #ffd700;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Lady Nicole P Cielo</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="real.html">Relationships</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="media.html">Social</a></li>
+                <li><a href="time.html">Timeline</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2>My Life Timeline</h2>
+            <div class="timeline-container">
+                
+                <!-- Childhood -->
+                <div class="timeline-item card">
+                    <h3>2007 - The year i was born</h3>
+                    <p>i was born on 2007 of April 24 in Cagayan de Oro Mindanao</p>
+                </div>
+                
+                <div class="timeline-item card">
+                    <h3>👨‍👩‍👧‍👦 2011 - Family moved</h3>
+                    <p>My family moved to luzon when i was four years because of my brothers medical emergency as the hospitals in Mindanao were not that great.</p>
+                </div>
+                
+                <!-- Teenage -->
+                <div class="timeline-item card">
+                    <h3>2012 -kindergarden</h3>
+                    <p>this was the year where i entered kindergarten and i was a very quiet child as i barely knew how to speak Tagalog at this poiint in my life as i was still speaking more on bisaya</p>
+                </div>
+                
+                <div class="timeline-item card">
+                    <h3>2019 - elementary Graduation</h3>
+                    <p>this is rhe year where i graduated from elementary and was about to start my Junior High experience</p>
+                </div>
+                
+                <!-- Now -->
+                <div class="timeline-item card">
+                    <h3>🎓 2025 - Senior High Graduation</h3>
+                    <p> this was the year Where i graduated from senior high and about to Began my college journey studying Associate of computer technology</p>
+                </div>
+                
+                <div class="timeline-item card">
+                    <h3>2026- Recognition rites</h3>
+                    <p>this is the year where i received my Award of academic lister Under the ACT course</p>
+                </div>
+                
+                <div class="timeline-item card">
+                    <h3>2026 - Skills competition</h3>
+                    <p>the year where i recently received a award for placing 2nd place under the lanyard design competition in the skills competition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> 2026 Cielo, Lady Nicole. All rights reserved.</p>
+    </footer>
+</body>
+</html>
